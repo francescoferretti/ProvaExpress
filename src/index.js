@@ -66,7 +66,7 @@ basicTimeline
 
 $(".buttonspecial").click(function () {
     basicTimeline.play();
-    basicTimeline.finished.then(callApi);
+    basicTimeline.finished.then(userAction);
 });
 
 $(".textspacial").click(function () {
@@ -82,9 +82,9 @@ $(".textspacial").click(function () {
     // do something with myJson
 };*/
 
-async function userAction(){
-    const response = await fetch('http://localhost:54595/GetUpperWord?parola=casa');
-    const myJson = await response.json(); //extract JSON from the http response
+async function userAction() {
+    const response = await fetch('http://localhost:54595/api/GetUpperWord?parola=casa');
+    const myJson = await response.text(); //extract JSON from the http response
     console.log(myJson);
     // do something with myJson
 };
