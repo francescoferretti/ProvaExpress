@@ -5,12 +5,22 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node src/index.js"
+    "start": "node src/index.js",
+    "build": "parcel build src/home.html --https",
+    "dev": "parcel src/home.html --https"
   },
   "author": "Me",
   "license": "ISC",
   "dependencies": {
+    "animejs": "^3.2.1",
     "express": "^4.17.1",
+    "foundation": "^4.2.1-1",
+    "jquery": "^3.6.0",
+    "parcel": "^2.0.0-beta.2",
     "pug": "^3.0.2"
+  },
+  "source": "src/index.js",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.0.0-beta.2"
   }
 }

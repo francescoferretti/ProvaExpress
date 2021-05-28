@@ -1,0 +1,2 @@
+var e=require("path").join,r=require("pug").compileFile,i=(require("foundation"),require("express"));const o=i();var t=r("./style/home.pug"),s={youAreUsingPug:!0};o.get("/",((e,r)=>{r.send(t(s))})),o.get("/pino/",((r,i)=>{i.sendFile(e("C:\\ProgettiVari\\ProvaExpress\\src","home.html"))})),o.listen(3e3,(()=>{console.log("Example app listening at http://localhost:3000")}));
+//# sourceMappingURL=index.js.map
